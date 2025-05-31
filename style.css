@@ -2,7 +2,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(39, 32, 68, 0.5), rgba(39, 32, 68, 0.5)),
     url(/images/venice-header.jpg);
   background-position: center;
   background-size: cover;
