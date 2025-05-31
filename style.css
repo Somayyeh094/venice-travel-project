@@ -55,7 +55,7 @@ main .first-section h4 {
   font-weight: 700;
   letter-spacing: 5px;
   color: rgba(39, 32, 68, 1);
-  margin-top: 0;
+  margin-top: 5px;
   line-height: 1.5;
 }
 main .first-section h3 {
