@@ -2,7 +2,10 @@ body {
   font-family: "Poppins", sans-serif;
 }
 header {
-  background-image: linear-gradient(rgba(39, 32, 68, 0.5), rgba(39, 32, 68, 0.5)),
+  background-image: linear-gradient(
+      rgba(39, 32, 68, 0.5),
+      rgba(39, 32, 68, 0.5)
+    ),
     url(/images/venice-header.jpg);
   background-position: center;
   background-size: cover;
@@ -36,19 +39,33 @@ header a {
   letter-spacing: 3px;
   font-weight: 700;
 }
-section{
-    padding: 100px;
+section {
+  padding: 100px;
 }
 .grid {
   display: grid;
-  grid-gap: 60px;
+
 }
 .grid-2-columns-main {
   grid-template-columns: 1fr 1fr;
+  grid-gap: 60px;
 }
-main .grid-2-columns-main img{
-    width: 100%;
+.grid-2-columns-main img{
+  width:100%
 }
+.grid-2-columns-image {
+  grid-template-columns: 1fr 1fr;
+
+}
+.grid-3-columns-main {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 60px;
+}
+ .embed {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
 main .first-section h4 {
   font-size: 16px;
   opacity: 30%;
@@ -66,24 +83,64 @@ main .first-section h3 {
   line-height: 1.5;
   margin: 0;
 }
- .first-section p {
+.first-section p {
   font-size: 16px;
   font-weight: 400;
   opacity: 70%;
   color: rgba(39, 32, 68, 1);
   line-height: 2;
 }
-.section2{
-    background: rgba(248, 248, 248, 1);
+.section2 {
+  background: rgba(248, 248, 248, 1);
 }
-.section2 h2{
-font-size: 48px;
-font-weight: 700;
-text-align: center;
-color: rgba(39, 32, 68, 1);
-margin-top: 0;
+.section2 h2 {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  color: rgba(39, 32, 68, 1);
+  margin-top: 0;
 }
-@media (max-width: 900px) {
+.card {
+  background-color: white;
+  padding-bottom: 60px;
+}
+.card-body{
+  padding: 0 10px;
+}
+.card-body h5 {
+  font-size: 24px;
+  font-weight: 700;
+  color: rgba(39, 32, 68, 1);
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.card-body p {
+  color: rgba(39, 32, 68, 1);
+  opacity: 70%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 64px;
+ 
+  margin-bottom: 40px;
+}
+.card-footer{
+  padding:0 30px;
+}
+.card-footer a {
+  background-color: rgba(70, 44, 178, 1);
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+ text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 14px;
+  font-weight: 700;
+  
+}
+@media (max-width: 1000px) {
   header {
     padding: 50px 0;
   }
@@ -98,13 +155,28 @@ margin-top: 0;
     padding: 8px 16px;
     font-size: 12px;
   }
-  section{
+  section {
     padding: 20px 10px;
   }
-  .grid{
-    grid-template-columns: 1fr;
-    grid-gap:20px
-  }
+  
   main .first-section h3 {
-    font-size: 28px;}
+    font-size: 28px;
+  }
+  .grid-3-columns-main ,.grid-2-columns-main{
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  .grid-2-columns-image {
+    grid-template-columns: 1fr;
+  }
+  .section2 h2 {
+    font-size: 24px;
+  }
+  .embed{
+    aspect-ratio: 16/9;
+  }
+  .card {
+padding-bottom: 20px;
+  }
+  
 }
